@@ -10,6 +10,13 @@ Database Access
 If you have an existing database, you can generate dataaccess classes by running `sbt gen-tables`. The classes will be generated under `target/src_managed`  
 It is recommended to copy the generated files under `app/models`and delete the content in `target`  
 A docker container, with mysql, can be started by running `./start_db.sh`, this can be used for dev and test, you should probably rename the container and the database. This can be done by replacing the names in `./start_db.sh` and the corresponding in `application.conf` and `application.test.conf`.  
+The database is created with user "root" and password "password", this is fine for dev and test and of course not for prod.
+
+Running the app
+===============
+
+To run the app: `sbt run`, this assumes that the environment variables in `application.conf` are set.
+To run the tests run `sbt test` sbt can run tests when files changes this can be done by entering a sbt session and issuing the command `~test`.   
 
 Controllers
 ===========
