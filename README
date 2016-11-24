@@ -4,6 +4,11 @@ JPMedier template scala, play and slick
 This project is based on our current knowledge of how to best make a json restful api on scala, play and slick.
 To create a new project, copy the contents of this project, delete the .git directory and create a new git repo.
 
+Database Access
+===============
+If you have an existing database, you can generate dataaccess classes by running `sbt gen-tables`.
+A docker container, with mysql, can be started by running `./start_db`, this can be used for dev and test.
+
 Controllers
 ===========
 
