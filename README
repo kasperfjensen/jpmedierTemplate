@@ -1,7 +1,8 @@
 JPMedier template scala, play and slick
 =================================
 
-This project is based on our current knowledge of how to best make a json restful api on scala, play and slick
+This project is based on our current knowledge of how to best make a json restful api on scala, play and slick.
+To create a new project, copy the contents of this project, delete the .git directory and create a new git repo.
 
 Controllers
 ===========
