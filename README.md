@@ -8,7 +8,7 @@ For now this is the best way to start a new project, maybe in the future, we mig
 Database Access
 ===============
 If you have an existing database, you can generate dataaccess classes by running `sbt gen-tables`. The classes will be generated under `target/src_managed`  
-It is recommended to copy the generated files under `pp/models`and delete the content in `target`  
+It is recommended to copy the generated files under `app/models`and delete the content in `target`  
 A docker container, with mysql, can be started by running `./start_db.sh`, this can be used for dev and test, you should probably rename the container and the database. This can be done by replacing the names in `./start_db.sh` and the corresponding in `application.conf` and `application.test.conf`.  
 
 Controllers
