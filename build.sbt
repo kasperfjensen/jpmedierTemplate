@@ -7,6 +7,8 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.7"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "UTF-8", "-Xfatal-warnings", "-Xlint:missing-interpolator", "-Ywarn-unused", "-Ywarn-dead-code", "-Ywarn-numeric-widen")
+javaOptions in Test += "-Dconfig.file=conf/application.test.conf"
+javaOptions in Test += "-Dlogger.file=conf/logback-test.xml"
 
 libraryDependencies ++= Seq(
   cache,
