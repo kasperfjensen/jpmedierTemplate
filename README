@@ -6,8 +6,10 @@ To create a new project, copy the contents of this project, delete the .git dire
 
 Database Access
 ===============
-If you have an existing database, you can generate dataaccess classes by running `sbt gen-tables`.
+If you have an existing database, you can generate dataaccess classes by running `sbt gen-tables`. The classes will be generated under target/src_managed.
+It is recommended to copy the generated files under app/models and delete the content in target.
 A docker container, with mysql, can be started by running `./start_db`, this can be used for dev and test.
+
 
 Controllers
 ===========
