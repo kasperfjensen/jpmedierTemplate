@@ -29,6 +29,10 @@ fork in run := false
 
 slick <<= slickCodeGenTask // register manual sbt command
 
+// adds public folder to docker image
+import NativePackagerHelper._
+mappings in Universal ++= directory("public")
+
 // sourceGenerators in Compile <+= slickCodeGenTask  // register automatic code generation on every compile, remove for only manual use
 
 // code generation task
